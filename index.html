@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zustellung Bauprojekt AP 2.5.4 Loge/Infopavillon in</title>
+  <title>Zustellung Bauprojekt AP 2.5.4 Loge/Infopavillon</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
@@ -30,15 +30,8 @@
     h1 {
       font-size: 2.55rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 3rem;
       line-height: 1.1;
-    }
-
-    .subtitle {
-      font-size: 1.35rem;
-      color: #aaaaaa;
-      margin-bottom: 3.5rem;
-      font-weight: 500;
     }
 
     .countdown {
@@ -86,7 +79,6 @@
 <body>
   <div class="container">
     <h1>Zustellung Bauprojekt AP 2.5.4<br>Loge/Infopavillon</h1>
-    <p class="subtitle">für Plangenehmigungsverfahren</p>
     
     <div class="countdown" id="countdown">
       <div class="time-unit">
@@ -131,14 +123,4 @@
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      document.getElementById("days").textContent = String(days).padStart(2, '0');
-      document.getElementById("hours").textContent = String(hours).padStart(2, '0');
-      document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
-      document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
-</body>
-</html>
+      document.getElementById("days").
